@@ -1,0 +1,460 @@
+﻿@charset "UTF-8";
+
+/* 共通部分*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+    line-height: 1.7;
+    color: black;
+    background-color: rgb(246, 247, 242);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*HEADER*/
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-top: 14px;
+}
+
+.logo-name {
+    font-size: 2.0rem;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav a {
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+/* ぼたん*/
+
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.button:hover {
+    background: #0090aa;
+}
+
+/*Home*/
+
+.home-content {
+    text-align: center;
+    margin-top: 5%;
+}
+.sub-title {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosoher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#home .page-title {
+    text-transform: none;
+}
+
+#home {
+    background-image: url(../images/main-bg2.jpg);
+    background-blend-mode: hard-light;
+    min-height: 100vh;
+}
+
+.range {
+    margin-top: 40px;
+    overflow: hidden;
+    width: 150px;
+    margin: 2em auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 9px 16px;
+    cursor: pointer;
+}
+
+.range select {
+    font-size: 1.125rem;
+    width: 100%;
+    padding-right: 1em;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.range select::-ms-expand {
+    display: none;
+}
+
+.range.range2 {
+    position: relative;
+    border: 1px solid #bbbbbb;
+    border-radius: 2px;
+    background: #ffffff;
+}
+
+.range.range2::before {
+    position: absolute;
+    top: 0.8em;
+    right: 0.9em;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #666666;
+    pointer-events: none;
+}
+
+.range.range2 select {
+    padding: 8px 38px 8px 8px;
+    color: #666666;
+}
+
+/* ジャンル */
+
+.autoplay img {
+    margin: 10px;
+    width: 95%;
+    border: 0.5px solid #eee;
+    cursor: pointer;
+}
+
+.autoplay img:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#genre a {
+    position: relative;
+}
+
+#genre a p {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: Quicksand, sans-serif;
+    top: 5%;
+    left: 5%;
+}
+
+#genre a img {
+    width: 100%;
+}
+
+/*一覧表示*/
+
+.keyword {
+    margin-bottom: 100px;
+}
+
+.main-table {
+    cursor: pointer;
+    color: black;
+}
+
+.p-content {
+    margin: 2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.p-main-img img {
+    width: 200px;
+    height: auto;
+}
+
+.p-content:before, .p-content:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+
+.p-content:before {
+    left: 10px;
+}
+
+.p-content:after {
+    right: 10px;
+}
+
+.p-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.shop-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.icon img {
+    width: 20px;
+    height: auto;
+}
+/* 詳細情報 */
+
+.detail-nav {
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+.detail-flex {
+    display: flex;
+}
+
+.shop-logo {
+    text-align: center;
+}
+
+.shop-photo img {
+    width: 90%;
+    height: auto;
+}
+
+.favocolor {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    right: 22%;
+    bottom: auto;
+    font-size: 40px;
+    
+}
+
+.favocolor_2 {
+    color: #FF0;
+}
+
+/* お気に入り */
+
+.favo-title {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Philosoher', serif;
+    font-weight:bold;
+}
+
+/* page up */
+
+#back-to-top {
+    color: #000000;
+    position: fixed;
+    right: 5px;
+    bottom: 70px;
+    padding: 5px;
+    border: double 5px #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*フッター*/
+
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+    margin-top: 0px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.0875rem;
+}
+
+/* ログイン */
+
+form input {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+input[type="submit"], input[type="button"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/*モバイル版*/
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    /*HEADER*/
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+        margin-top: 60%;
+    }
+    .main-nav a {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.0rem;
+        border-radius: 2px;
+        padding: 5px 10px;
+    }
+    /*HOME*/
+    .home-content {
+        margin-top: 20%;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* ジャンル */
+    #genre a p {
+        font-size: 1em;
+        top: 10%;
+        left: 10%;
+    }
+    /* 件数 */
+    .count {
+        text-align: center;
+    }
+    /* 一覧表示 */
+    .p-main-img img {
+        width: 50px;
+        height: auto;
+        text-align: center;
+    }
+    .p-result-area {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .p-content {
+        display: grid;
+    }
+    .shop-name {
+        font-size: 1.0rem;
+        font-weight: 1.2rem;
+    }
+    .icon {
+        text-align: left;
+    }
+    
+    /* 詳細情報 */
+    .detail-nav {
+        font-size: 1rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: left;
+
+    }
+    .detail-flex {
+        display: grid;
+    }
+    .catch {
+        font-size: 0.8rem;
+    }
+    #back-to-top {
+        right: 40px;
+    }
+    .shop-photo {
+        text-align: center;
+    }
+    .favocolor {
+        font-size: 30px;
+        right: 50px;
+    }
+}
